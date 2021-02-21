@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- html should have lang attribute, we use en-ca to declare it is Canadian English -->
 <html lang="en-ca">
 <head>
 	<meta charset="utf-8">
@@ -7,7 +8,7 @@
 		table, th, td {
   		border: 1px solid black; 
 		}
-		ul {
+		#nobullets {
         list-style-type: none;
       	}
 	</style>
@@ -52,10 +53,14 @@
 				<td colspan="3">All of the above are Division Heads</td>
 			</tr>
 		</table>
+		<!-- section tag is HTML5 semantic tag that is used to specfiy varous secttions in a HTML body -->
+		<!-- Section tag simliar to header and nav tag is just a container and its content is called section content -->
 		<section class="Animals">
 			<h2>Animals</h2>
 			<nav>
-				<ul class="Animals">
+				<!-- An element can have multiple classes separated by a space -->
+				<!-- The id for an element is unique, so it can only have one id -->				
+				<ul id="nobullets" class="Animals">
 					<li>
 						<figure>
 							<img src="img/elephant.jpg" width="300" height="200" alt="elephant">
@@ -91,6 +96,9 @@
 		</section>
 
 		<section class="HTML Entities">
+			<!-- div tag is the most generic content holder used in HTML -->
+			<!-- div tag is an example of block level element -->
+			<!-- A block level element takes entire width on a page and pushes the next tag to next line when rendering -->	
 			<div>
 				<h2 class="HTML Entities">HTML Entities</h2>
 				<dl>
@@ -102,12 +110,14 @@
 					<dd></dd>
 					<dt>Copyright : &copy;</dt>
 					<dd></dd>
-				</dl>
+				</dl>			
 			</div>
 		</section>
 	
 		<section class="Special Tags">
-			<div>
+			<!-- article tag is used to create the content/text for HTML document -->
+			<!-- Note: article tag as any other semantic tag is also know as structural element -->
+			<article>
 				<h2 class="Special Tags">Special Tags</h2>
 				<dl>
 					<dt>Coffee</dt>
@@ -117,7 +127,7 @@
 				</dl>
 				<p><abbr title="Hypertext Markup Language">HTML</abbr></p>
 				<p><abbr title="Cascading Style Sheet">CSS</abbr></p>
-			</div>
+			</article>
 		</section>
 
 		<details>
