@@ -1,0 +1,169 @@
+@charset "utf-8";
+
+
+
+p {
+
+	font-family: 'Verdana';
+
+}
+
+	.header img {
+		position: absolute;
+		top: 30px;
+		left: 20px;	
+	}
+
+	.header h1 {
+		font-family: Verdana;
+		position: absolute;
+		top: 30px;
+		left: 200px;
+	}
+
+	.header {
+		background: #7cc576;
+	 	padding: 50px;
+	 	height: 225px;
+	}
+
+	.home {
+		float: left;
+		width:150px;
+		padding: 15px;
+		box-sizing: border-box;
+		background: #6dcff6;
+		position: absolute;
+		top: 155px;
+		left: 50px;
+		text-align: center;
+		border-radius: 10px;
+		font-family: Verdana;
+		font-size: 14px;
+		/*box-sizing border box makes the width adjust according to padding*/
+	}
+
+	.about {
+		float: left;
+		width:150px;
+		padding: 15px;
+		box-sizing: border-box;
+		background: #6dcff6;
+		position: absolute;
+		top: 155px;
+		left: 300px;
+		text-align: center;
+		border-radius: 10px;
+		font-family: Verdana;
+		font-size: 14px;
+		/*box-sizing border box makes the width adjust according to padding*/
+	}
+
+	.contact {
+		float: left;
+		width:150px;
+		padding: 15px;
+		box-sizing: border-box;
+		background: #6dcff6;
+		position: absolute;
+		top: 155px;
+		left: 550px;
+		text-align: center;
+		border-radius: 10px;
+		font-family: Verdana;
+		font-size: 14px;
+		/*box-sizing border box makes the width adjust according to padding*/
+	}
+
+	.work {
+		float: left;
+		width:150px;
+		padding: 15px;
+		box-sizing: border-box;
+		background: #6dcff6;
+		position: absolute;
+		top: 155px;
+		left: 800px;
+		text-align: center;
+		border-radius: 10px;
+		font-family: Verdana;
+		font-size: 14px;
+		/*box-sizing border box makes the width adjust according to padding*/
+	}
+
+	.container {
+	  max-width: 960px;
+	  margin: 0 auto;
+	  height: 500px;
+	}
+
+	.maincontent {
+		background-image: url("../img/background.png");
+		font-family: Verdana;
+		font-size: 16px;
+  		float: left;
+  		width: 70%;
+  		padding: 10px;
+  		height: 400px;
+	}
+
+	.sidebar {
+		background-image: url("../img/background.png");
+		font-family: Verdana;
+		font-size: 16px;
+		height: 30%;
+		width: 350px;
+		position: absolute;
+		top: 40%;
+		right: 0;
+		text-align: left;
+		padding: 10px;
+	}
+
+	* {
+  		box-sizing: border-box;
+	}
+
+	.secondarycontent {
+		background-image: url("../img/background.png");
+		font-family: Verdana;
+		width: 100%;
+		padding-left: 20px;
+		text-align: left;
+	}
+
+	.secondarycolumn {
+  		float: left;
+  		width: 33.33%;
+  		padding: 50px;
+	}
+
+	.secondarycolumn figcaption {
+		font-family: Verdana;
+		font-size: 14px;
+		text-align: center;
+	}
+
+/* Clearfix (clear floats) */
+	.row::after {
+  		content: "";
+  		clear: both;
+  		display: table;
+	}
+
+	.footer {
+		background:  #7cc576;
+	   	padding: 10px;
+	   	height: 100px;
+	   	text-align: left;
+	   	font-family: Verdana;
+		font-size: 14px;
+	}
+
+	.footer img {
+		position: relative;
+		bottom: 30px;
+		left: 1000px;
+		width: 50px;
+		height: 50px;
+	}
