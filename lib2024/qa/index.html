@@ -141,6 +141,126 @@
 				The &lt;link&gt; tag is used to link to an external style sheet. For example: &lt;link rel="stylesheet" type="text/css" href="css/style.css"&gt;
 			</p>
 		</li>
+		<!-- Qus 13 -->
+		<li>
+			<p>
+				<strong>Qus:</strong>
+				Create CSS block to center an element both horizontally and vertically that has position:absolute and has width:200px and height:200px.
+			</p>
+			<p>
+				<strong>Ans:</strong>
+				div{
+	  				bottom: 0;
+	  				height: 200px;
+					left: 0;
+					margin: auto;
+					position: absolute;
+					top: 0;
+					right: 0;
+					width: 200px;
+				}
+			</p>
+		</li>
+		<!-- Qus 14 -->
+		<li>
+			<p>
+				<strong>Qus:</strong>
+				Create CSS keyframes block called "spin" that rotates an element.
+			</p>
+			<p>
+				<strong>Ans:</strong>
+				@keyframes spin {
+  					from {
+    					transform: rotate(0deg);
+  					}
+  					to {
+    					transform: rotate(359deg);
+  					}
+				}
+			</p>
+		</li>
+		<!-- Qus 15 -->
+		<li>
+			<p>
+				<strong>Qus:</strong>
+				Create CSS animation block to rotate an element that has the following properties:
+				class "rotate-me"
+				It rotates 5 times at intervals of 0.5s with "linear" transition using animation keyframes "spin"
+			</p>
+			<p>
+				<strong>Ans:</strong>
+				.rotate-me {
+  					animation: spin .5s 5 linear;
+				}
+				@keyframes spin {
+  					from {
+    					transform: rotate(0deg);
+  					}
+  					to {
+    					transform: rotate(359deg);
+  					}
+				}
+			</p>
+		</li>
+		<!-- Qus 16 -->
+		<li>
+			<p>
+				<strong>Qus:</strong>
+				How would you include create an alert with string "I love JavaScript" using JavaScript?
+			</p>
+			<p>
+				<strong>Ans:</strong>
+				&lt;script&gt; 
+				function myFunction() {
+  					alert("I love JavaScript");
+				}
+				&lt;/script&gt;
+			</p>
+		</li>
+		<!-- Qus 17 -->
+		<li>
+			<p>
+				<strong>Qus:</strong>
+				How would you fade out an element with id "fade-me" after a delay of 300ms using JQuery?
+			</p>
+			<p>
+				<strong>Ans:</strong>
+				$("#fade-me").fadeOut(300);
+			</p>
+		</li>
+		<!-- Qus 18 -->
+		<li>
+			<p>
+				<strong>Qus:</strong>
+				How would you select all elements with class "my-class" using Javascript and Jquery?
+			</p>
+			<p>
+				<strong>Ans:</strong>
+				$( ".my-class" )
+			</p>
+		</li>
+		<!-- Qus 19 -->
+		<li>
+			<p>
+				<strong>Qus:</strong>
+				Give an example of input field that takes phone number with format "123-456-7890"?
+			</p>
+			<p>
+				<strong>Ans:</strong>
+				&lt;input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required&gt;
+			</p>
+		</li>
+		<!-- Qus 20 -->
+		<li>
+			<p>
+				<strong>Qus:</strong>
+				Among HTML, CSS, Javascript, JQuery, what language did you like the best? State the reason.
+			</p>
+			<p>
+				<strong>Ans:</strong>
+				I preferred HTML, as it seemed easier than the other languages.
+			</p>
+		</li>
 	</ol>
 </body>
 </html>
