@@ -1,0 +1,196 @@
+@charset "utf-8";
+
+@import "fonts.css";
+
+.header h1 {
+		font-family: strongvoid;
+		color: #72a9ae;
+		position: absolute;
+		top: 10px;
+		left: 10px;
+	}
+
+	.header {
+	 	padding: 40px;
+	 	height: 5px;
+	}
+
+	.topnav {
+		font-family: Roboto;
+		overflow: hidden;
+		background-color: #72a9ae;
+	}
+
+	.topnav a {
+		float: left;
+		color: black;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+		font-size: 17px;
+	}
+
+	.topnav a:hover {
+		background-color: #ddd;
+		color: black;
+	}
+
+	.topnav a.active {
+		color: black;
+	}
+
+	.body {
+		background-image: url("../img/geometric-leaves.png");
+		font-family: Roboto;
+	}
+
+	.body h2 {
+		color: #72a9ae;
+	}
+
+	.firstsection {
+  		float: left;
+  		width: 65%;
+  		padding: 10px;
+  		height: 325px;
+	}
+
+	.firstsectionsidebar {
+		height: 30%;
+		width: 400px;
+		position: absolute;
+		top: 28%;
+		right: 0%;
+		text-align: left;
+		padding: 10px;
+	}
+
+	.secondsectionheader {
+		display: flex;
+		width: 100%;
+		padding: 10px;
+		height: 70px;
+	}
+
+	.body table, td, th {
+		border: 1px solid black;
+	}
+
+	.body table {
+		width: 100%;
+		border-collapse: collapse;
+		padding-left: 10px;
+	}
+
+	.body th {
+		font-family: Roboto;
+		color: #72a9ae;
+		font-size: 18px;
+	}
+
+	.body tr {
+		line-height: 36px;
+	}
+
+	.body tr:nth-child(even) {
+		background: #f0f0f0;
+	}
+
+	.body td {
+		text-align: center;
+		font-weight: bold;
+	}
+
+	#profile label {
+		display: inline-block;
+		width: 150px;
+		text-align: left;
+		font-weight: bold;
+		padding-left: 10px;
+	}
+
+	input[type=text], select {
+		width: 20%;
+		padding: 5px;
+		margin: 8px 0;
+		display: inline-block;
+		border: 1px solid black;
+		box-sizing: border-box;
+	}
+
+	button {
+		padding: 5px;
+		background: white;
+		position: relative;
+		left: 265px;
+	}
+
+	select {
+		width: 20%;
+		padding: 5px;
+		margin: 8px 0;
+		display: inline-block;
+		border: 1px solid black;
+		box-sizing: border-box;
+	}
+
+	.profile {
+		display: flex;
+	}
+
+	.editProfile {
+		width: 65%;
+	}
+
+	.profileInfo {
+		flex-grow: 1;
+	}
+
+	.profileCard {
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+		max-width: 250px;
+		height: 300px;
+		text-align: center;
+		background-color: white;
+	}
+
+	.footer {
+		font-family: Roboto;
+		background: #454545;
+	   	padding: 10px;
+	   	height: 200px;
+	}
+
+	.footercolumn {
+  		float: left;
+  		width: 20%;
+  		text-align: left;
+  		color: white;
+  		padding-left: 120px;
+	}
+
+	.fa {
+		padding: 10px;
+		height: 15px;
+		width: 15px;
+		text-align: center;
+		text-decoration: none;
+		border-radius: 50%;
+		font-size: 48px;
+	}
+
+	.fa-facebook {
+		background: #3B5998;
+		color: white;
+	}
+
+	.fa-youtube-play {
+		background: #bb0000;
+		color: white;
+	}
+
+	.fa-twitter {
+		background: #55ACEE;
+		color: white;
+	}
+

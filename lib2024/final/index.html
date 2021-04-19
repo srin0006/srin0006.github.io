@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+<head>
+  <meta charset="utf-8">
+	<title>Final</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="fonts/fonts.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto"/>
+    <script src="js/scripts.js"></script>
+</head>
+<body>
+<div class="header">
+	<h1>MY LOGO</h1>
+</div>
+<div class="topnav">
+    <a class="active" href="#home">HOME</a>
+    <a href="#about">ABOUT</a>
+    <a href="#schedule">SCHEDULE</a>
+    <a href="#portfolio">PORTFOLIO</a>
+    <a href="#contact">CONTACT</a>
+</div>
+
+<div class="body">
+    <section>
+    <div class="firstsection" id="about">
+        <h2>ABOUT</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <p>Nullam ultricies ex sed elit euismod, sit amet varius lorem laoreet. Vivamus non quam metus. Pellentesque ac finibus risus. Vivamus quis bibendum ipsum. Donec vitae neque varius, vehicula nibh vulputate, volutpat nibh. Praesent euismod, eros eu vestibulum blandit, leo lacus commodo turpis, eu euismod lectus massa nec velit. Sed dictum ante eget pulvinar blandit. Sed nec mollis arcu, non imperdiet massa. Mauris ac semper diam, pulvinar elementum velit. Sed pellentesque, quam ac eleifend eleifend, est dolor commodo enim, nec faucibus dolor ex non magna. Vestibulum a consectetur lacus. Proin vulputate egestas aliquet. Praesent iaculis ultrices sagittis. Aliquam vel nibh eget metus dignissim dapibus.
+        </p>
+        <aside class="firstsectionsidebar">
+            <img src="img/bridge.png" alt="Bridge" style="width:95%">
+        </aside> 
+    </div>
+    </section>
+    
+    <div class="secondsectionheader" id=schedule>
+        <h2>SCHEDULE</h2>
+    </div>
+    
+    <table>
+        <tr>
+            <th>TIME</th>
+            <th>MONDAY</th>
+            <th>TUESDAY</th>
+            <th>WEDNESDAY</th>
+            <th>THURSDAY</th>
+            <th>FRIDAY</th>
+        </tr>
+        <tr>
+            <td>09:00 - 11:00</td>
+            <td>Communications I</td>
+            <td>Client Services</td>
+            <td>Special Collections</td>
+            <td>Directed Research Seminar</td>
+            <td>Client Services</td>
+        </tr>
+        <tr>
+            <td>11:00 - 12.30</td>
+            <td>Reference</td>
+            <td>Internet App</td>
+            <td>Library Software</td>
+            <td>French</td>
+            <td>Reference</td>
+        </tr>
+        <tr>
+            <td>14:00 - 15:00</td>
+            <td>Acquisitions</td>
+            <td>General Elective</td>
+            <td>Marketing</td>
+            <td>Emerging Library Tech</td>
+            <td>Library Software</td>
+        </tr>
+        <tr>
+            <td>15:30 - 17:30</td>
+            <td>French</td>
+            <td>French</td>
+            <td>Acquisitions</td>
+            <td>Subject Analysis</td>
+            <td>Internet App</td>
+        </tr>
+    </table>
+
+    <div class="profile" id="portfolio">
+        <div class="editProfile">
+            <h2>EDIT PROFILE</h2>
+            <form id="profile" onsubmit="return false;">
+                <label for="name">Name:</label>
+                <input type="text" name="fname" required><br>
+                <label for="email">Email:</label>
+                <input type="text" name="email" required><br>
+                <label for="address">Address:</label>
+                <input type="text" name="address" required><br>
+                <label for="city">City:</label>
+                <input type="text" name="city" required><br>
+                <label for="name">Province:</label>
+                <select name="province">
+                    <option value="Select">Select Province</option>
+                    <option value="AB">Alberta</option>
+                    <option value="BC">British Columbia</option>
+                    <option value="MB">Manitoba</option>
+                    <option value="NB">New Brunswick</option>
+                    <option value="NL">New Foundland and Labrador</option>
+                    <option value="NS">Nova Scotia</option>
+                    <option value="ON">Ontario</option>
+                    <option value="PEI">Prince Edward Island</option>
+                    <option value="QC">Quebec</option>
+                    <option value="SC">Saskatchewan</option>
+                </select><br>
+                <label for="postalcode">Postal Code:</label>
+                <input type="text" name="postalcode" required><br><br>
+                <button onclick="updateForm(fname.value, email.value, address.value, city.value, province.value, postalcode.value)">SUBMIT</button><br><br>
+            </form>
+        </div>
+
+        <div class="profileInfo">
+            <h2>PROFILE INFO</h2>
+            <div class="profileCard">
+                <br>
+                <img src="img/avatar.png" alt="Avatar">
+                <h2 id="profilename">John Doe</h2>
+                <label id="profileemail">JohnDoe@algonquincollege.com</label><br>
+                <label id="profileaddress">1385 Woodroffe Avenue, Nepean</label><br>
+                <label id="profileprovince">ON, K2G 1V8</label><br>
+                <a href="mailto:example@yourdomain.com"><img src="img/mail.png" alt="Mail"></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="footer" id="contact">
+	<div class="row">
+    	<div class="footercolumn">
+    		<h3>QUICK LINKS</h3>
+    		<p>SCHEDULE<br></p>
+    		<p>ABOUT<br></p>
+    		<p>PORTFOLIO<br></p>
+    		<p>CONTACT<br></p>
+    	</div>
+    	<div class="footercolumn">
+    		<h3>FOLLOW US</h3>
+    		<a href="http://www.facebook.com" class="fa fa-facebook"></a>
+			<a href="http://www.youtube.com" class="fa fa-youtube-play"></a>
+			<a href="http://www.twitter.com" class="fa fa-twitter"></a>
+    	</div>
+    	<div class="footercolumn">
+    		<h3>ADDRESS</h3>
+    		<p>1385 Woodroffe Ave,<br>
+    		Nepean, ON K2G 1V8<br>
+    		Canada</p>
+    	</div>
+    </div>
+</div>
+</body>
+</html>
