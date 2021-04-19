@@ -86,15 +86,15 @@
         <div class="editProfile">
             <h2>EDIT PROFILE</h2>
             <form id="profile" onsubmit="return false;">
-                <label for="name">Name:</label>
+                <label>Name:</label>
                 <input type="text" name="fname" required><br>
-                <label for="email">Email:</label>
+                <label>Email:</label>
                 <input type="text" name="email" required><br>
-                <label for="address">Address:</label>
+                <label>Address:</label>
                 <input type="text" name="address" required><br>
-                <label for="city">City:</label>
+                <label>City:</label>
                 <input type="text" name="city" required><br>
-                <label for="name">Province:</label>
+                <label>Province:</label>
                 <select name="province">
                     <option value="Select">Select Province</option>
                     <option value="AB">Alberta</option>
@@ -108,7 +108,7 @@
                     <option value="QC">Quebec</option>
                     <option value="SC">Saskatchewan</option>
                 </select><br>
-                <label for="postalcode">Postal Code:</label>
+                <label>Postal Code:</label>
                 <input type="text" name="postalcode" required><br><br>
                 <button onclick="updateForm(fname.value, email.value, address.value, city.value, province.value, postalcode.value)">SUBMIT</button><br><br>
             </form>
